@@ -436,6 +436,7 @@ footer {
         .Commentform
         {
           background-color: #e9eaee;
+          max-width: 500px;
         }
         .submicomment,.bgquide
         {
