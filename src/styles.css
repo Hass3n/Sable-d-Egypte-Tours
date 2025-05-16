@@ -1,0 +1,528 @@
+/**************************Import Fonts Url *************/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/**********************Global Style**********************/
+:root {
+
+  --head-head-family: "Questrial", sans-serif;
+  --body-font-family: "Quicksand", sans-serif;
+  --main-color: #313041;
+  --rating-color: #DBA72C;
+  --black-color: #000;
+  --white-color: #FFFFFF;
+  --section-color: #FAF5EE;
+  --secondery-color: #E8604C;
+  --animation-duration: 400ms;
+  overflow-x: hidden;
+
+
+
+
+}
+
+
+/********************Nabar and header************/
+.main-nav {
+  background-color: #f4f0ee;
+}
+
+.logo {
+  width: 40px;
+
+}
+
+.nav-link {
+  color: var(--black-color) !important;
+  font-family: var(--body-font-family);
+  font-size: 1.0625rem;
+  font-weight: 500;
+
+}
+
+.form-select option {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  font-family: var(--body-font-family);
+
+
+
+}
+
+.nav-link.active {
+  color: var(--secondery-color) !important;
+  font-family: var(--body-font-family);
+  font-size: 1.0625rem;
+  font-weight: 600;
+}
+
+.form-select {
+  border: 2px solid var(--secondery-color) !important;
+}
+
+
+.logo-text {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: var(--black-color);
+}
+
+.form-select:focus {
+  border-color: var(--secondery-color);
+  outline: 0;
+  box-shadow: 0 0 0 .25rem var(--white-color);
+}
+
+header {
+  position: relative;
+  background-image: url(assets/Images/luxor.jpg);
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  height: 80vh;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.guide
+{
+
+  position: relative;
+  background-image: url(assets/Images/pyramides-de-gizeh-15388\ \(1\).jpg), linear-gradient(to bottom, rgba(0, 0, 0, .8), transparent 27%);
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  height: 80vh;
+  z-index: 1; 
+  overflow: hidden;
+}
+
+.guide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+ 
+  /* 0.5 for 50% black overlay */
+  z-index: 2;
+}
+
+.info
+{
+  z-index: 4;
+}
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* 0.5 for 50% black overlay */
+  z-index: 2;
+}
+
+header>div {
+  position: relative;
+  z-index: 3;
+  /* to appear above the overlay */
+}
+
+.info h2 {
+  font-size: 3.4375rem;
+  font-family: "Poppins", sans-serif;
+
+
+}
+
+.info h2
+{
+  font-size: 1.875rem;
+  color: var(--secondery-color);
+}
+.bookbtn button  {
+  background-color: var(--white-color);
+  color: var(--secondery-color);
+  font-family: "Cairo", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  animation: fadeIn 2s ease-in-out;
+
+
+}
+
+.btn:hover {
+  color: var(--white-color);
+  background-color: var(--secondery-color);
+  border-color: var(--white-color);
+}
+
+header h1 ,.guide h2 {
+  color: var(--white-color);
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/****************Home******************/
+.reviewinfo {
+  background-color: var(--section-color);
+}
+
+.gvrnotitle h2,
+.reviewinfo h2,
+.reviewcustomer h3, h3.info {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Cairo", sans-serif;
+  color: var(--secondery-color);
+}
+
+
+.gvrnotitle p,
+.reviewcustomer p {
+  font-family: var(--body-font-family);
+  color: #7B8794;
+  font-size: 1.0625rem;
+  font-weight: 500;
+}
+
+footer {
+  background-color: var(--main-color);
+}
+
+.footerp {
+  font-size: 1.0625rem;
+  ;
+  font-family: var(--body-font-family);
+
+}
+
+.card-text {
+  font-family: var(--body-font-family);
+  color: #7B8794;
+  font-size: 17px;
+  font-weight: lighter;
+
+}
+
+.tour-card {
+  position: relative;
+}
+
+.tour-card img {
+  height: 270px;
+  object-fit: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.tour-card .position-relative {
+  position: relative;
+  /* نستخدم هذه لتحديد مكان الـ overlay داخل الصورة */
+}
+
+.tour-card .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  /* تأكد من أن الـ overlay سيكون فوق الصورة */
+
+}
+
+.tour-card:hover .overlay {
+  transform: translateY(0);
+}
+
+.tour-badge {
+  background-color: var(--secondery-color);
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.3s ease;
+  font-weight: bold;
+  border-radius: 0.25rem;
+  position: absolute;
+  z-index: 2;
+}
+
+.tour-card:hover .tour-badge {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.facebook {
+  background-color: var(--secondery-color);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.navigationlikns li {
+  background-color: var(--section-color);
+}
+
+.navigationlikns li a {
+  color: var(--secondery-color);
+}
+
+/************Plcaes Details ***********/
+.placesdetails h3 {
+  font-size: 15px;
+}
+
+.placesdetails i {
+  color: var(--secondery-color);
+}
+
+.placesdetails .btn,
+.btnToggle {
+  background-color: var(--secondery-color);
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--black-color);
+  /* Green background */
+  border-radius: 50%;
+  /* Make it circular */
+  padding: 10px;
+  /* Space around the arrow */
+  background-size: 60% 60%;
+  /* Resize arrow inside circle */
+}
+
+/*********************Trips************/
+.tour-card {
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.tour-card:hover {
+  transform: scale(1.02);
+}
+
+.tour-image {
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.btn-book {
+  background-color: #d18d00;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-book:hover {
+  background-color: #bb7b00;
+  color: #fff;
+}
+
+/**************Trips Details *******************/
+
+.trip-details h5 {
+  font-size: 1.25rem;
+}
+
+.tripDetailsIcon {
+  color: var(--secondery-color);
+}
+
+.tripDetailsCommenticon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--secondery-color);
+  color: var(--white-color);
+}
+
+.booking-form {
+  background-color: #e9eaee;
+
+}
+
+.numreview {
+  background-color: var(--rating-color);
+  color: var(--white-color);
+}
+
+.booking-form h5 span {
+  color: var(--secondery-color);
+}
+
+.increase,
+.decrease {
+  width: 50x;
+  height: 50px;
+  background-color: var(--secondery-color);
+  color: var(--white-color);
+  border-radius: 50%;
+}
+
+.d-grid button,
+.Daytoogle {
+  background-color: var(--secondery-color);
+}
+
+/****************Responsive table************/
+   .table-responsive {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .table-bordered th,
+        .table-bordered td {
+            border: 1px solid #dee2e6;
+        }
+        .table-hover tbody tr:hover {
+            background-color: rgba(0, 0, 0, 0.075);
+        }
+
+        .table {
+            width: 100%;
+            margin-bottom: 1rem;
+            color: #212529;
+        }
+        .table th,
+        .table td {
+            padding: 0.75rem;
+            vertical-align: top;
+            border-top: 1px solid #dee2e6;
+        }
+        .table thead th {
+            vertical-align: bottom;
+            border-bottom: 2px solid #dee2e6;
+        }
+        .table tbody + tbody {
+            border-top: 2px solid #dee2e6;
+        }
+
+        thead {
+            background-color: #bb7b00;
+        }
+
+
+        /***********Comment from*******/
+        .Commentform
+        {
+          background-color: #e9eaee;
+        }
+        .submicomment,.bgquide
+        {
+          background-color: var(--secondery-color);
+        }
+
+
+        /*********Essntial curosla********/
+          .carousel-item {
+      padding: 2rem;
+      background-color: #f4f0ee;
+      border-radius: 1rem;
+    }
+    .bg-description
+    {
+
+      background-color: #f4f0ee;
+      
+    }
+
+    .carousel-image {
+      object-fit: cover;
+      border-radius: 1rem;
+   
+    }
+
+    .carousel-text {
+      max-height: 200px;
+      overflow-y: auto;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 4rem;
+      height: 4rem;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: var(--secondery-color);
+      border-radius: 50%;
+      opacity: 1.5;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(1);
+    }
+
+    .title-small {
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.9rem;
+    }
+
+    .title-main {
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-style: italic;
+      color: #014d43;
+    }
+
+    h3.moodtitle 
+{
+
+  color:var(--secondery-color) !important;
+  font-size: 1.5625rem;
+}
+
+
+.linkactive{
+  color: var(--secondery-color) !important;
+}
+
+
+/***************About**********/
+ .check-icon {
+      color: orange;
+      font-weight: bold;
+    }
+    .section-title {
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .team-photo {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .text-block {
+      margin-bottom: 1rem;
+    }
